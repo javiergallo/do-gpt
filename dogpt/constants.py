@@ -1,5 +1,6 @@
 import inspect
 import time
+import webbrowser
 
 ROUTINES_SPEC = {
     "print": {
@@ -30,6 +31,14 @@ ROUTINES_SPEC = {
         ),
         "callable": time.time,
         "signature": "()",
+    },
+    "open_browser": {
+        "short_desc": "Opens the web browser at a particular location.",
+        "callable": webbrowser.open,
+    },
+    "quit": {
+        "short_desc": "Quit.",
+        "callable": quit,
     },
 }
 
